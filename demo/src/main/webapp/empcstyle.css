@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+students{
+	background:red;
+}
+name,id{
+	background:orange;
+}
+name,id 
+{
+	display:block;
+}

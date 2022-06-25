@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Retriving From XML</title>
+</head>
+<body>
+	<div>
+		<button onclick="loadXML()">Get Details</button>
+	</div>
+	
+	<div>
+		<table id="demo" border="1"></table>
+	</div>
+	
+	<script type="text/javascript">
+     function loadXML()
+     {
+	    var xmlHttp = new XMLHttpRequest();
+	    xmlHttp.onreadystatechange= function()
+	    {
+		    if(this.readyState==4 && this.status==200)
+			    getDetails(this);
+	    };
+			xmlHttp.open("GET","details.xml",true); 
+			xmlHttp.send();
+			
+     }
+	     function getDetails(response)
+	     {
+			var xmlDoc = response.responseXML;
+			var X=xmlDoc.getElementsByTagName("person");
+
+			var table="<tr><th>Name</th><th>Email</th></tr>"
+			   for(var i=0;i<X.length;i++)
+				{
+				  table+="<tr><td>"+ X[i].getElementsByTagName("name")[0].childNodes[0].nodeValue+"</td>";
+				  table+="<td>"+ X[i].getElementsByTagName("email")[0].childNodes[0].nodeValue+"</td></tr>"; 
+				}
+			   document.getElementById("demo").innerHTML = table;
+		 }
+     
+	</script>
+</body>
+</html>

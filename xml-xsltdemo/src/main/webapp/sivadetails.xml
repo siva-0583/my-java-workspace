@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="myxsl.xsl"?>
+<contact>
+
+	<person>
+		<firstname>Kamasani</firstname>
+		<lastname>Siva</lastname>
+		<name>Kamasani Siva</name>
+		<email>siva.klu@gmail.com</email>
+		<phone>6303996003</phone>
+	</person>
+	<person>
+	
+		<firstname>Parvathanani</firstname>
+		<lastname>Lahari</lastname>
+		<name>Parvathanani Lahari</name>
+		<email>lahari.klu@gmail.com</email>
+		<phone>6303996003</phone>
+	</person>
+	
+	<person>
+		<firstname>Abcd</firstname>
+		<lastname>Sri</lastname>
+		<name>Abcd Sri</name>
+		<email>sri.klu@gmail.com</email>
+		<phone>6300228987</phone>
+	</person>
+	
+	<person>
+		<firstname>Billgate</firstname>
+		<lastname>Swa</lastname>
+		<name>Ch.Swaroop</name>
+		<email>swa.klu@gmail.com</email>
+		<phone>xxxxxx909</phone>
+	</person>
+	
+</contact>
